@@ -1,0 +1,9 @@
+<link rel="stylesheet" href="css/03.css">
+<div id="app">
+    <h2>BINDING HTML ATTRIBUTES</h2>
+    <p>Choose color: ['red','blue']</p>
+    <input type="text" v-on:input="cssClass = $event.target.value">
+    <p v-bind:class="cssClass">Color: {{ cssClass }}</p>
+</div>  
+<script src="js/vue.js"></script>
+<script src="js/03.js"></script>

@@ -1,0 +1,16 @@
+<div id="app">
+    <h2>CONDITIONALS AND LISTS</h2>
+    <button v-on:click="show = !show">Show / Hide</button>
+    <p v-if="show">I'm part-time visible!</p>
+    <p v-else>Am I visible?</p>
+    <p v-show="show">Hurray, I'm here!</p>
+    <hr>   
+    <ul>
+        <li v-for="person in persons">{{ person.name }}</li>
+    </ul>  
+    <ul>
+        <li v-for="(person, index) in persons">{{ person.name }} - {{ index }}</li>
+    </ul>
+</div>
+<script src="js/vue.js"></script>
+<script src="js/05.js"></script> 
